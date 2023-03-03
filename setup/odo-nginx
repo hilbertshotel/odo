@@ -1,0 +1,10 @@
+# nginx
+
+server {
+    listen 7374;
+    server_name 94.236.216.148;
+
+    location / {
+        proxy_pass http://127.0.0.1:8888;
+    }
+}

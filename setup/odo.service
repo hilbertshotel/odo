@@ -1,0 +1,13 @@
+[Unit]
+Description=odo
+
+[Service]
+Restart=always
+RestartSec=30s
+WorkingDirectory=/home/ubuntu/src/odo
+ExecStart=/home/ubuntu/src/odo/odo
+StandardOutput=append:/home/ubuntu/src/odo/logs/odo.log
+StandardError=append:/home/ubuntu/src/odo/logs/odo.log
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,30 @@
+ODO
+organic digital olddities
+
+remember the goal
+build games for learning
+while learning to build games
+
+no mobile version
+it's a game design tool
+not a product
+
+restrict the process
+less options
+for heightened creativity
+and simple design
+
+The main difference between non-games and traditional video games
+is the lack of structured goals, objectives, and challenges.
+This allows the player a greater degree of self-expression through
+freeform play, since they can set up their own goals to achieve.
+
+stack:
+    go, nim, nginx, lightsail, html, css
+
+elements:
+    catalog & games server
+
+odo             -> show info
+odo new <name>  -> create new game template in games folder
+odo play        -> start game server

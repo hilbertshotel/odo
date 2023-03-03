@@ -1,0 +1,52 @@
+.box {
+    position: relative;
+    padding: .5rem;
+    width: 480px;
+    margin: auto;
+    background-color: #ffd4d6;
+    border: 2px solid #5c5a79;
+
+    display: grid;
+    grid-template-columns: repeat(4, 120px);
+    grid-auto-rows: 120px;
+    border-radius: 6.5rem;
+
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.clickTile, .tile {
+    margin: .1rem;
+    background-color: #f7b6b1;
+    border: 2px solid #5c5a79;
+}
+
+.clickTile:hover {
+    cursor: pointer;
+    border: 2px solid #7e7aa2;
+}
+
+/***** ANIMATIONS *****/
+#leftBox {
+    box-shadow: 10px 10px 3px rgba(214, 160, 167, 0.5);
+    animation-name: leftBoxAnimation;
+}
+
+@keyframes leftBoxAnimation {
+    0% { left: 0px; top: 0px; box-shadow: 10px 10px 3px rgba(214, 160, 167, 0.5); } 
+    50% { left: -5px; top: -5px; box-shadow: 15px 15px 3px rgba(214, 160, 167, 0.5); }
+    100% { left: 0px; top: 0px; box-shadow: 10px 10px 3px rgba(214, 160, 167, 0.5); }
+}
+
+#rightBox {
+    box-shadow: -10px 10px 3px rgba(214, 160, 167, 0.5);
+    animation-name: rightBoxAnimation;
+    animation-delay: 1.5s;
+}
+
+@keyframes rightBoxAnimation {
+    0% { right: 0px; top: 0px; box-shadow: -10px 10px 3px rgba(214, 160, 167, 0.5); }
+    50% { right: -5px; top: -5px; box-shadow: -15px 15px 3px rgba(214, 160, 167, 0.5); }
+    100% { right: 0px; top: 0px; box-shadow: -10px 10px 3px rgba(214, 160, 167, 0.5); }
+}

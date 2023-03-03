@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/box.css">
+    
+    <title>patterns</title>
+    
+</head>
+<body>
+
+    <audio id="music" src="audio/music.ogg" type="audio/ogg" loop></audio>
+    <audio id="win" src="audio/win.ogg" type="audio/ogg"></audio>
+    <audio id="click" src="audio/click.ogg" type="audio/ogg"></audio>
+
+    <main>
+
+        <div class="box" id="leftBox"></div>
+
+        <div class="menu">
+
+            <div class="button" id="tilesButton" onclick="changeTiles(this)">3t</div>
+            <div class="button" id="colorsButton" onclick="changeColors(this)">1c</div>
+ 
+            <div class="button" id="playButton" onclick="play()">Pl</div>
+            <div class="button" id="muteButton" onclick="mute(this)">Mu</div>
+            <div class="button" id="exitButton" onclick="exit()">Ex</div>
+
+        </div>
+
+        <div class="box" id="rightBox"></div>
+
+    </main>
+
+    <script>
+
+        const mute = (button) => {
+            const music = document.getElementById("music")
+            if (button.id === "mute") {
+                music.muted = false
+                button.id = ""
+            } else {
+                music.muted = true
+                button.id = "mute"
+            }
+        }
+
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

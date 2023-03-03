@@ -1,0 +1,27 @@
+body {
+    background-color: aliceblue;
+    margin: 2rem;
+    text-align: center;
+}
+
+.game {
+    font-size: 1.5rem;
+    color: black;
+    background-color: lightsteelblue;
+    padding: .5rem 1rem;
+    /* margin: 1rem auto; */
+    width: 500px;
+}
+
+.game:hover {
+    background-color: rgb(137, 162, 194);
+    cursor: pointer;
+}
+
+.game h3 {
+  margin-top: 0;
+}
+
+#repo {
+    font-size: 1.2rem;
+}

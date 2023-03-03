@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="http://fonts.cdnfonts.com/css/common-pixel" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>grabatile</title>
+</head>
+<body>
+
+    <div class="headerBoard" id="headerBoard">
+        <h1 class="header" style="color: #bebebe">GRABATILE</h1>
+    </div>
+
+    <div class="menu">
+        <button onclick="startButton()" class="button" style="background-image: url('images/buttons/start.png')"></button>
+        <button onclick="muteButton(this)" class="button" id="" style="background-image: url('images/buttons/mute.png')"></button>
+        <button onclick="quitButton()" class="button" style="background-image: url('images/buttons/quit.png')"></button>
+    </div>
+
+    <div class="tileMap" id="tileMap"></div>
+
+    <audio id="music" src="audio/music.ogg" type="audio/ogg" loop></audio>
+    <audio id="grab" src="audio/grab.ogg" type="audio/ogg"></audio>
+    <audio id="fail" src="audio/fail.ogg" type="audio/ogg"></audio>
+
+    <audio id="red" src="audio/colors/red.ogg" type="audio/ogg"></audio>
+    <audio id="blue" src="audio/colors/blue.ogg" type="audio/ogg"></audio>
+    <audio id="green" src="audio/colors/green.ogg" type="audio/ogg"></audio>
+    <audio id="yellow" src="audio/colors/yellow.ogg" type="audio/ogg"></audio>
+    <audio id="orange" src="audio/colors/orange.ogg" type="audio/ogg"></audio>
+    <audio id="white" src="audio/colors/white.ogg" type="audio/ogg"></audio>
+    <audio id="pink" src="audio/colors/pink.ogg" type="audio/ogg"></audio>
+    <audio id="purple" src="audio/colors/purple.ogg" type="audio/ogg"></audio>
+    <audio id="brown" src="audio/colors/brown.ogg" type="audio/ogg"></audio>
+    <audio id="black" src="audio/colors/black.ogg" type="audio/ogg"></audio>
+    <audio id="grey" src="audio/colors/grey.ogg" type="audio/ogg"></audio>
+
+    <script>
+        
+        const muteButton = (button) => {
+            const music = document.getElementById("music")
+            if (button.id === "mute") {
+                music.muted = false
+                button.id = ""
+            } else {
+                music.muted = true
+                button.id = "mute"
+            }
+        }
+
+        const quitButton = () => {
+            window.location.href = "/"
+        }
+
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

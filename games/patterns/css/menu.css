@@ -1,0 +1,55 @@
+body {
+    margin: 5rem 0;
+    background: url("../images/background.png");
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr .2fr 1fr;
+}
+
+.menu {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.button {
+    font-size: 50px;
+    font-weight: bold;
+    user-select: none;
+    color: #5c5a79;
+    font-family: "Barrio", cursive;
+
+    height: 40px;
+    width: 40px;
+    margin: 1rem auto;
+    position: relative;
+
+    animation-name: buttonHover;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #f7b6b1;
+    border: 2px solid #7e7aa2;
+    color: #7e7aa2;
+    border-radius: .2rem;
+}
+
+@keyframes buttonHover {
+    0% { top: 0px; }
+    50% { top: 3px; }
+    100% { top: 0px; }
+}
+
+#tilesButton { animation-delay: 0s; }
+#colorsButton {
+    animation-delay: 3s;
+    margin-bottom: 3rem;    
+}
+#playButton { animation-delay: 1s; }
+#muteButton { animation-delay: 4s; }
+#exitButton { animation-delay: 2s; }

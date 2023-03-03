@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    background-color: #e5e5e5;
+}
+
+/* HEADER BOARD */
+/**************************************************/
+
+#headerDiv {
+    position: relative;
+}
+
+.header {
+    position: absolute;
+    margin: 0rem auto;
+    padding: 0rem 2rem;
+    font-family: 'Common Pixel', sans-serif;
+    font-size: 100px;
+    color: #e5e5e5;
+    
+}
+
+/* MENU */
+/**************************************************/
+
+#\#FFdd00, #\#FFFFFF {
+    color: #bebebe;
+}
+
+.menu {
+    text-align: right;
+    margin: 1rem 2.5rem;
+}
+
+.button {
+    outline: none;
+    border: none;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    margin-left: 0.1rem;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+/* TILE MAP */
+/**************************************************/
+
+.tileMap {
+    margin: -1rem auto;
+    width: 828px; /* (128 * 6) 768 + 36 (6 * 6) = 804 */
+    transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
+
+    display: grid;
+    grid-template-columns: repeat(6, 128px);
+    grid-auto-rows: 128px;
+    grid-gap: 10px;
+}
+
+.tile {
+    position: relative;
+}
+
+.tile:hover {
+    cursor: grab;
+    left: -4px;
+    top: 4px;
+}
+
+.tile:active {
+    cursor: grabbing;
+}

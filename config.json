@@ -1,0 +1,7 @@
+{
+    "HostAddr": "127.0.0.1:8888",
+    "ReadTimeout": 10,
+    "WriteTimeout": 10,
+    "TmpDir": "./template/*",
+    "GamesDir": "./games"
+}
