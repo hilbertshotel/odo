@@ -5,7 +5,7 @@ import "html/template"
 // LOGGER
 type Logger struct {
 	Error func(error)
-	Ok    func(string)
+	Ok    func(...string)
 }
 
 // CONFIG

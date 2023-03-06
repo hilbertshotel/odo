@@ -54,8 +54,12 @@ func initLogger() *Logger {
 			errLog.Println(msg)
 		},
 
-		Ok: func(msg string) {
-			okLog.Println(msg)
+		Ok: func(ss ...string) {
+			var msg string
+			for _, s := range ss {
+				msg += s + " "
+			}
+			okLog.Println(msg[:len(msg)-1])
 		},
 	}
 }
